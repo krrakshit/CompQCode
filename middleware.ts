@@ -7,7 +7,7 @@ export default withAuth(
   {
     callbacks: {
       authorized: ({ token, req }) => {
-        if (req.nextUrl.pathname.startsWith("/homepage") || req.nextUrl.pathname.startsWith("/analyze")) {
+        if (req.nextUrl.pathname.startsWith("/homepage") || req.nextUrl.pathname.startsWith("/analyze") || req.nextUrl.pathname.startsWith("/company")) {
           return !!token;
         }
         return true;
@@ -20,5 +20,5 @@ export default withAuth(
 );
 
 export const config = {
-  matcher: ["/homepage/:path*","/analyze/:path*"],
+  matcher: ["/homepage/:path*","/analyze/:path*","/company/:path*"],
 };
