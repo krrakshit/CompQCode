@@ -27,7 +27,7 @@ export default function LandingPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Link href="/login">
+            <Link href="/homepage">
               <Button size="lg" className="glass-card hover:glass-card text-white border-white/20 px-8 py-4 text-lg">
                 Get Started
                 <ArrowRight className="ml-2 w-5 h-5" />
